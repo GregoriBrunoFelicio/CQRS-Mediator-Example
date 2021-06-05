@@ -10,11 +10,6 @@ namespace CQRS_Mediator.Controllers
     [Route("[controller]")]
     public class CustomerController : ControllerBase
     {
-        public CustomerController()
-        {
-
-        }
-
         [HttpPost]
         public Task<CreateCustomerResponse> Create(
             [FromServices] IMediator mediator,
